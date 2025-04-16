@@ -8,6 +8,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Використовуємо останню версію Ubuntu для CI/CD
 
+    permissions:
+      contents: write # дає github-actions право пушити
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2 # Використовуємо найновішу стабільну версію для checkout
